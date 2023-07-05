@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header></header>
+    <main class="container mt-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <strong>What is the distinction between map,filter,for each, and find in JavaScript?</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+
+                        <strong>Map, filter, forEach, and find in JavaScript used to operate in arrays.</strong>
+                        The distinction between map,filter,for each, and find in JavaScript is:
+                        <br>
+                        <code>Map</code><br>By applying a transformation function to each element of an existing
+                        array, map creates a new array.
+                        It returns a new array with the same number of elements as the original array, but with the
+                        function's transformation applied to each element.
+                        <br>
+                        <code>filter</code> <br>
+                        A filter is used to create a new array that contains only the elements that meet a specific
+                        condition. It returns a new array containing only the elements that pass the function's
+                        specified test. <br>
+                        <code>forEach</code> <br>
+                        forEach runs a function once for each element in an array.It does not generate a new array, but
+                        it can be used to modify the original array or to apply a side effect to each element.
+                    <br>      
+                    <code>Find</code> <br>
+                    find is used to locate the first element in an array that meets a specific condition
+                    . It returns the first element that passes the function's test.If no element meets the condition, it returns undefined.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <strong>What is the distinction between local storage, session storage and cookies?</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>Local storage, session storage, and cookies are all ways to store data in a user's browser, but they differ in their lifespan, capacity, and scope. Here's a brief overview of each:</strong><br>
+
+                        <code>Cookies:</code><br>
+                        Cookies are small text files that are stored in a user's browser by websites they visit. They're typically used to remember user preferences and login information, and can be accessed by both the server and the client-side JavaScript. Cookies have a relatively small storage capacity and can have an expiration date, which can be either persistent or session-based.<br>
+
+                        <code>Session storage:</code><br>
+                        Session storage is a way to store data in a user's browser for the duration of a session. A session is defined as the period of time between when a user opens a website and when they close it. Session storage is similar to local storage, but data stored in session storage is deleted when the user closes their browser. It has a larger storage capacity than cookies, but is only accessible from the originating window/tab.<br>
+
+                        <code>Local storage:</code><br>
+                        Local storage is a way to store data in a user's browser beyond the lifespan of a session. Data stored in local storage persists even after the user closes their browser and can be accessed from any window/tab of the same origin. Local storage has a larger storage capacity than cookies and session storage, but it's important to note that it's not intended to be used for sensitive data, such as passwords or credit card numbers.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <strong>What is an event loop and how does it function in javascprite?</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        The event loop is a fundamental concept in JavaScript that enables it to handle asynchronous operations. At a high level, the event loop is a constantly running loop that checks for new events, processes them, and then waits for new events to arrive. <br><br>
+
+                        <strong>In JavaScript, the event loop is responsible for managing the execution of code, handling events, and callbacks. Here's a simplified overview of how it works:</strong><br><br>
+
+                        <code>1.</code>When JavaScript encounters an asynchronous operation, such as an AJAX request or a setTimeout function, it places that operation in a queue and continues executing the rest of the code.<br><br>
+
+                        <code>2.</code>The event loop constantly checks the queue for any pending operations. If it finds an operation in the queue, it removes it and executes it.<br><br>
+
+                        <code>3.</code>If the operation has a callback function, the event loop places that callback function in a separate callback queue.<br><br>
+
+                        <code>4.</code>Once all synchronous code has finished executing, the event loop checks the callback queue for any pending callback functions. If it finds a callback function, it removes it and executes it.<br><br>
+
+                        <code>5.</code>The event loop then repeats this process, constantly checking for new events and processing them.<br><br>
+
+                        The event loop is critical to the performance and scalability of JavaScript applications because it enables them to handle multiple tasks concurrently without blocking the main thread. This means that JavaScript can handle complex and time-consuming operations, such as network requests, without slowing down the rest of the application.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        <strong>What is the purpose of the quizTimer function?</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        The <code>quizTimer</code> function is a timer function that is designed to run a quiz countdown timer on a web page. The function takes one argument dismiss, which is used to dismiss or stop the timer when set to true.<br><br>
+
+                        When the function is called with dismiss set to true, it stops the timer by clearing the interval set by setInterval. Otherwise, it creates an interval using setInterval that runs a callback function every second to update the countdown timer display.<br><br>
+
+                        The countdown timer display is updated by incrementing the count variable and using it to calculate the minutes and seconds to display. The minutes and seconds are then displayed on the HTML element with the ID "count".<br><br>
+
+                        The function also changes the color of the timer every 60 seconds, alternating between red-300 and red-700 classes, to provide a visual cue to the user that time is running out.<br><br>
+
+                        Overall, the quizTimer function is used to provide a visual countdown timer for a quiz or timed activity on a web page.
+                    </div>
+                </div>
+            </div>
+
+
+            <div   class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        <strong>What is the purpose of the  chooseQuiz function?</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                    The chooseQuiz function is designed to update the user's answers to a quiz question. It takes two arguments: index and givenAns. The index parameter is the index of the quiz question being answered, and givenAns is the user's answer to that question.<br><br>
+
+                    The function first checks if the current quiz question is already answered by using the find method to search for a matching id in the answers array. If the question is already answered, it updates the answer with the new givenAns. If not, it adds a new object with the quiz question and the user's answer to the answers array.<br><br>
+
+                    The displayAnswers function is then called to display the updated answers to the user.
+
+                    Overall, the chooseQuiz function is an important part of a quiz application that allows users to answer questions and keep track of their progress. It updates the user's answers to quiz questions and displays them to the user so they can keep track of their progress and make any necessary changes.<br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
